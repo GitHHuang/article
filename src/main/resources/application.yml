@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      host: 106.55.62.135
+      database: articledb
+      port: 27017
