@@ -1,6 +1,7 @@
 spring:
   data:
     mongodb:
-      host: 106.55.62.135
-      database: articledb
-      port: 27017
+#      host: 106.55.62.135
+#      database: articledb
+#      port: 27017
+      uri: mongodb://106.55.62.135:27017,106.55.62.135:27018,106.55.62.135:27019/articledb?connect=relicaSet&slaveOk=true&replicaSet=myrs

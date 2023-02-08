@@ -26,7 +26,7 @@ public class CommentServiceTest {
 
     @Test
     public void testFindCommentById() {
-        Comment comment = commentService.findCommentById("63db2dcc9efe1d24b04cdf90");
+        Comment comment = commentService.findCommentById("1");
         System.out.println(comment);
     }
 
