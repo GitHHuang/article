@@ -1,7 +1,18 @@
 spring:
   data:
     mongodb:
+#      单机
 #      host: 106.55.62.135
 #      database: articledb
 #      port: 27017
-      uri: mongodb://106.55.62.135:27017,106.55.62.135:27018,106.55.62.135:27019/articledb?connect=relicaSet&slaveOk=true&replicaSet=myrs
+#      开启认证后
+#      username: dahuangren
+#      password: 123456
+#      集群
+#      uri: mongodb://106.55.62.135:27017,106.55.62.135:27018,106.55.62.135:27019/articledb?connect=relicaSet&slaveOk=true&replicaSet=myrs
+#      分片
+#      uri: mongodb://106.55.62.135:27017,106.55.62.135:27117/articledb
+#      单机开启认证，字符串连接
+#      uri: mongodb://dahuangren:123456@106.55.62.135:27017/articledb
+#      副本集开启认证，字符串连接
+      uri: mongodb://dahuangren:123456@106.55.62.135:27017,106.55.62.135:27018,106.55.62.135:27019/articledb?connect=relicaSet&slaveOk=true&replicaSet=myrs
